@@ -1,6 +1,6 @@
 h1. simple-require 
 
-An simple asynchronous JavaScript and CSS loader.
+A simple asynchronous JavaScript and CSS loader.
 
 h2. Features
 
