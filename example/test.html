@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" /> 
+    <meta http-equiv="Content-Language" content="de" /> 
+  </head>
+  <body>
+    <div id="load">
+      <h1>This should disappear!</h1>
+    </div>
+
+    <h1>This should be green!</h1>
+
+    <h2>This should be blue!</h2>
+
+    <script type="text/javascript" src="../simple-require.js"></script>
+    <script type="text/javascript">
+      window.addEventListener( "load", function() {
+        require("jquery-1.4.2.min.js")
+          .require("first.js")
+          .require("second.js")
+          .require("style.css")
+          .require("init.js")
+          .now(function() { 
+             alert("done");
+        });
+      }, false );
+    </script>
+
+
+  </body>
+</html>

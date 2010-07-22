@@ -1,0 +1,1 @@
+var a = window.a = { a: 1 };
